@@ -1,0 +1,39 @@
+@use "./icons";
+@use "./header/header-section";
+@use "./header/content-section";
+@use "./about/about-section";
+@use "./loading-page";
+
+* {
+       box-sizing: border-box;
+
+} :root {
+       font-size: 10px;
+       --font-header: "Poppins", sans-serif;
+       --font-body: "Inter", sans-serif;
+
+       --primary-color     : #A85400;
+       --second-color      : #252C32;
+       --background-color  : #F6F6F6;
+       --weight-color      : #fff;
+
+       scroll-behavior: smooth;
+
+} body * {
+       font-family: var(--font-body);
+       font-size: 1.3rem;
+       line-height: 22px;
+       text-decoration: none;
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       color: var(--second-color);
+} body {
+       padding-inline: 40px;
+       @media (max-width: 768px) {
+              padding-inline: 20px;
+       }
+}
+
+
+

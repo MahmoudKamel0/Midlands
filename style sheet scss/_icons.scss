@@ -1,0 +1,56 @@
+.logo {
+       display: inline-block;
+       width: 104px;
+       height: 32px;
+       background: url("../images/logo.svg");
+}
+
+.phone-icon {
+       display: inline-block;
+       width: 34px;
+       height: 34px;
+       background: url("../images/phone.svg");
+}
+
+.mail-icon {
+       display: inline-block;
+       width: 34px;
+       height: 34px;
+       background: url("../images/mail.svg");
+}
+
+.arrow-icon {
+       display: inline-block;
+       width: 10px;
+       height: 10px;
+       background: url("../images/arrow.svg");
+}
+
+.menu-icon {
+       display: inline-block;
+       width: 34px;
+       height: 34px;
+       background: url("../images/menu-button.svg") center/cover no-repeat;
+}
+
+.linkedin-icon {
+       display: inline-block;
+       width: 34px;
+       height: 34px;
+       background: url("../images/linkedin-svgrepo-com.svg") center/cover no-repeat;
+}
+
+.twitter-icon {
+       display: inline-block;
+       margin-top: 6px;
+       width: 19px;
+       height: 19px;
+       background: url("../images/twitter-3-svgrepo-com.svg") center/cover no-repeat;
+}
+
+.test {
+       display: inline-block;
+       width: 120px;
+       height: 100px;
+       background: url("../images/circle.svg") center/cover no-repeat;
+}

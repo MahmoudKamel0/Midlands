@@ -1,0 +1,42 @@
+#About {
+       .info {
+              // width: 100%;
+              h2 {
+                     width: 30vw;
+                     font-size: 28px;
+                     font-weight: bold;
+                     margin-bottom: 20px;  
+                     line-height: 40px;
+              }
+              h2 strong {
+                     position: relative;
+                     color: var(--primary-color);
+                     font-size: inherit;
+              }
+              h2 strong i {
+                     position: absolute;
+                     top: -32px;
+                     left: 0;
+              }
+              p {
+                     width: 50vw;
+                     line-height: 23px;
+              }
+              p strong:hover {
+                     color: var(--primary-color);
+              }
+
+              @media (max-width: 991px) {
+                     width: 100%;
+                    
+                     h2, p {
+                            width: 100%;
+                     }
+              }
+
+              h3 {
+                     margin-top: 15px;
+              }
+
+       }
+}

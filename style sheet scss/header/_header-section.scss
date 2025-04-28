@@ -1,0 +1,117 @@
+/*-- start header section 
+-------------------------------*/
+header {
+       margin-top: 29px !important;
+
+       .navigation {
+              margin-bottom: 10px;
+
+              .left {
+                     a span:hover {
+                            color: var(--primary-color);
+                     }
+              }
+
+              ul.right li:not(:last-child) a {
+                     display: inline-block;
+                     position: relative;
+              }
+              ul.right li:not(:last-child) a::before {
+                     content: "";
+                     position: absolute;
+                     width: 0%;
+                     height: 2px;
+                     background: var(--primary-color);
+                     bottom: -10px;
+                     left: 0;
+                     transition: all 0.3s ease-in-out;
+                     border-radius: 50px;
+
+                     // prefixes
+                     -webkit-transition: all 0.3s ease-in-out;
+                     -moz-transition: all 0.3s ease-in-out;
+                     -ms-transition: all 0.3s ease-in-out;
+                     -o-transition: all 0.3s ease-in-out;
+                     -webkit-border-radius: 50px;
+                     -moz-border-radius: 50px;
+                     -ms-border-radius: 50px;
+                     -o-border-radius: 50px;
+              }
+              ul.right li:not(:last-child) a:hover::before {
+                     width: 50%;
+              }
+              ul.right li:not(:last-child) a:hover {
+                     color: var(--primary-color);
+              }
+
+              ul.right li:last-child a {
+                     background: var(--background-color);
+                     padding: 11px 23px;
+                     border-radius: 100px;
+
+                     // prefixes
+                     -webkit-border-radius: 100px;
+                     -moz-border-radius: 100px;
+                     -ms-border-radius: 100px;
+                     -o-border-radius: 100px;
+              }
+
+              button.btn-menu {
+                     background: none;
+                     border: none;
+                     outline: none;
+                     cursor: pointer;
+              }
+
+              @media (max-width: 1176px) {
+                     .left span {
+                            display: none;
+                     }
+              }
+
+              @media (max-width: 992px) {
+                     ul.right {
+                            height: 338px;
+                            position: absolute;
+                            width: 100%;
+                            top: 85px;
+                            left: 0;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            background: rgba(255, 255, 255, 0.808);
+                            backdrop-filter: blur(10px);
+                            border-top: 1px solid #eee;
+                            z-index: 20;
+                            visibility: hidden;
+                            opacity: 0;
+
+                            // prefixes
+                            transition: all 0.3s ease-in-out;
+                            -webkit-transition: all 0.3s ease-in-out;
+                            -moz-transition: all 0.3s ease-in-out;
+                            -ms-transition: all 0.3s ease-in-out;
+                            -o-transition: all 0.3s ease-in-out;
+                     }
+
+
+                     ul.right li:last-child a {
+                            background: none;
+                     }
+                     ul.right li a:hover {
+                            color: var(--primary-color);
+                     }
+                     ul.right li a:hover::before {
+                            width: 0% !important;
+                     }
+                     
+                     ul.right.active{
+                            visibility: visible;
+                            opacity: 1;
+                     }
+                     
+              }
+       }
+}
+
