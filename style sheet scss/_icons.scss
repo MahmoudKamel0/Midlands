@@ -54,3 +54,34 @@
        height: 100px;
        background: url("../images/circle.svg") center/cover no-repeat;
 }
+@for $i from 1 through 6 {
+       .arrow#{$i} {
+              display: inline-block;
+              background: url("../images/arrow#{$i}.svg") center/cover no-repeat;
+       }
+}
+
+.arrow1 {
+       width: 75px;
+       height: 80px;
+}
+
+.arrow2, .arrow3 {
+       width: 180px;
+       height: 69px;
+}
+
+.arrow4 {
+       width: 100px;
+       height: 100px;
+}
+
+.arrow5 {
+       width: 120px;
+       height: 70px;
+}
+
+.arrow6 {
+       width: 130px;
+       height: 120px;
+}

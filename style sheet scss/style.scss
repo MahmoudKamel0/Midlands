@@ -2,6 +2,7 @@
 @use "./header/header-section";
 @use "./header/content-section";
 @use "./about/about-section";
+@use "./solutions/solutions";
 @use "./loading-page";
 
 * {
@@ -29,11 +30,44 @@
        margin: 0;
        color: var(--second-color);
 } body {
+       position: relative;
        padding-inline: 40px;
        @media (max-width: 768px) {
               padding-inline: 20px;
        }
 }
 
+h2.title {
+       font-size: 28px;
+       font-weight: bold;
+       margin-bottom: 20px;  
+       line-height: 40px;
+}
+h2.title strong {
+       position: relative;
+       color: var(--primary-color);
+       font-size: inherit;
+}
 
+.vector-body1 {
+       top: 290px; 
+       right: 20px;
+       z-index: -2;
+}
+
+.vector-body2 {
+       top: 1100px; 
+       left: -150px;
+       z-index: -2;
+       
+       @media screen and (max-width: 992px) {
+              top: 1650px; 
+              left: -50px;
+              
+       }
+}
+
+img {
+       user-select: none;
+}
 
